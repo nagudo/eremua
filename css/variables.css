@@ -1,0 +1,24 @@
+:root {
+    --primary:  #ee8a1e;
+    --text:     #1a1a1a;
+
+    --blue:    #0000ff;
+    --red:     #ff0000;
+    --black:   #000000;
+
+    --white:    #fff;
+    --grey:     #333;
+
+    /* Text size */
+    --text-s:   .75rem;
+    --text-m:   1rem;
+    --text-l:   1.5rem;
+    --text-xl:  1.75rem;
+
+    --font-family: 'MagentaFont', Helvetica, Arial, sans-serif;
+
+    /* Spacing */
+    --space-s: .75em;
+    --space-m: 1em;
+    --space-l: 1.25em;
+}

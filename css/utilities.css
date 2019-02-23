@@ -1,0 +1,33 @@
+/************************/
+/****** Utilities *******/
+/************************/
+
+/* Text */
+.u-text--center {
+    text-align: center;
+}
+
+.u-text--right {
+    text-align: right;
+}
+
+.u-text--left {
+    text-align: left;
+}
+
+.u-text--small {
+    font-size: var(--text-s);
+}
+
+.u-text--large {
+    font-size: var(--text-l);
+}
+
+.u-text-primary {
+    font-family: var(--font-family);
+}
+
+/* Visibility */
+.u-hidden {
+    display: none;
+}

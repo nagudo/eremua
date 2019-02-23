@@ -1,0 +1,26 @@
+/* Menu styles */
+.c-nav__menu {
+    align-items: center;
+    background-color: var(--primary);
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    justify-content: center;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+}
+
+.c-nav__items {
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+.c-nav__items li:not(:first-child) {
+    margin-top: calc(1.5 * var(--space-m));
+}
+
+.c-nav__items:not(.c-nav__items--primary) {
+    color: var(--black);
+    margin-top: calc(1.5 * var(--space-m));
+}

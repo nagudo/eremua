@@ -1,0 +1,7 @@
+/* General layout styles */
+
+body {
+    background: var(--white);
+    color: var(--grey);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

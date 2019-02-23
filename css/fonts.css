@@ -1,0 +1,13 @@
+
+/* --------------------------------- Fonts --------------------------------- */
+
+@font-face {
+    font-family: 'MagentaFont';
+    font-weight: normal;
+    src: url('fonts/Magenta.eot');
+    src: url('fonts/Magenta.eot?#iefix') format('eot'),
+        url('fonts/Magenta.woff') format('woff'),
+        url('fonts/Magenta.woff2') format('woff2'),
+        url('fonts/Magenta.ttf') format('truetype'),
+        url('fonts/Magenta.svg') format('svg');
+}
