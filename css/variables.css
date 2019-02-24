@@ -12,10 +12,13 @@
     /* Text size */
     --text-s:   .75rem;
     --text-m:   1rem;
-    --text-l:   1.5rem;
-    --text-xl:  1.75rem;
+    --text-l:   1.25rem;
 
-    --font-family: 'MagentaFont', Helvetica, Arial, sans-serif;
+    --font-magenta: 'MagentaFont', Helvetica, Arial, sans-serif;
+
+    --line-height-s: calc(1.35 * var(--text-s));
+    --line-height-m: calc(1.35 * var(--text-m));
+    --line-height-l: calc(1.35 * var(--text-l));
 
     /* Spacing */
     --space-s: .75em;

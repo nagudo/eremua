@@ -1,26 +1,36 @@
 /* Menu styles */
-.c-nav__menu {
+.o-nav__menu {
     align-items: center;
     background-color: var(--primary);
     display: flex;
     flex-flow: column;
+    font-size: var(--text-l);
     height: 100vh;
     justify-content: center;
     top: 0;
     position: absolute;
     width: 100vw;
+
+    /* Animation */
+    transition: 1s;
+    left: -100vw;
 }
 
-.c-nav__items {
-    font-family: var(--font-family);
+.o-nav__menu--visible {
+    transition: 1s;
+    left: 0;
+}
+
+.o-nav__items {
+    font-family: var(--font-magenta);
+    margin-top: calc(4 * var(--space-m));
     text-align: center;
 }
 
-.c-nav__items li:not(:first-child) {
-    margin-top: calc(1.5 * var(--space-m));
+.o-nav__items li {
+    padding: var(--space-s) 0;
 }
 
-.c-nav__items:not(.c-nav__items--primary) {
+.o-nav__items:not(.o-nav__items--primary) {
     color: var(--black);
-    margin-top: calc(1.5 * var(--space-m));
 }

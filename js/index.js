@@ -44,3 +44,14 @@ var app = {
 };
 
 app.initialize();
+
+function toggleMenu() {
+    $('.o-nav__menu').toggleClass('o-nav__menu--visible');
+}
+
+(function ($) {
+    $("#navButton").click(function () {
+        toggleMenu();
+        $(this).toggleClass('c-nav__button--active');
+    });
+})(jQuery);

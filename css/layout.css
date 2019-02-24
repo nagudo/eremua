@@ -3,5 +3,19 @@
 body {
     background: var(--white);
     color: var(--grey);
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'HelveticaNeue Light', Helvetica, Arial, sans-serif;
+    line-height: var(--line-height-m);
+}
+
+.l-page {
+    padding: var(--space-m) calc(2.5 * var(--space-m));
+}
+
+h2 {
+    border-bottom: 5px solid var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--text-l);
+    margin: 0 auto var(--space-m);
+    padding-bottom: 0.25em;
+    width: 90%;
 }

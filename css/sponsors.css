@@ -1,0 +1,10 @@
+/* Sponsor styles */
+
+.o-sponsors {
+    column-count: 2;
+    margin-top: calc(2 * var(--space-m));
+}
+
+.o-sponsors__item {
+    padding: var(--space-m);
+}

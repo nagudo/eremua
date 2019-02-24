@@ -4,10 +4,21 @@
 @font-face {
     font-family: 'MagentaFont';
     font-weight: normal;
-    src: url('fonts/Magenta.eot');
-    src: url('fonts/Magenta.eot?#iefix') format('eot'),
-        url('fonts/Magenta.woff') format('woff'),
-        url('fonts/Magenta.woff2') format('woff2'),
-        url('fonts/Magenta.ttf') format('truetype'),
-        url('fonts/Magenta.svg') format('svg');
+    src: url('fonts/Magenta/Magenta.eot');
+    src: url('fonts/Magenta/Magenta.eot?#iefix') format('eot'),
+        url('fonts/Magenta/Magenta.woff') format('woff'),
+        url('fonts/Magenta/Magenta.woff2') format('woff2'),
+        url('fonts/Magenta/Magenta.ttf') format('truetype'),
+        url('fonts/Magenta/Magenta.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeue Light';
+    font-weight: lighter;
+    src: url('fonts/HelveticaNeueLight/HelveticaNeueLTStd-Lt.eot');
+    src: url('fonts/HelveticaNeueLight/HelveticaNeueLTStd-Lt.eot?#iefix') format('eot'),
+        url('fonts/HelveticaNeueLight/HelveticaNeueLTStd-Lt.woff') format('woff'),
+        url('fonts/HelveticaNeueLight/HelveticaNeueLTStd-Lt.woff2') format('woff2'),
+        url('fonts/HelveticaNeueLight/HelveticaNeueLTStd-Lt.ttf') format('truetype'),
+        url('fonts/HelveticaNeueLight/HelveticaNeueLTStd-Lt.svg') format('svg');
 }

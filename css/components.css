@@ -6,7 +6,7 @@
 .c-button {
     background-color: var(--white);;
     border: 1px solid var(--black);
-    font-family: var(--font-family);
+    font-family: var(--font-magenta);
     text-align: center;
     padding: var(--space-m);
 }
@@ -37,6 +37,7 @@
     height: 40px;
     position: relative;
     width: 40px;
+    z-index: 2;
 }
 
 .c-nav__button--bar,
@@ -66,4 +67,17 @@
 
 .c-nav__button--bar::after {
     top: 20px;
+}
+
+.c-nav__button--active .c-nav__button--bar {
+    transform: translate3d(0,10px,0) rotate(45deg);
+}
+
+.c-nav__button--active .c-nav__button--bar::before {
+    transform: rotate(-45deg) translate3d(-5.71429px,-6px,0);
+    opacity: 0;
+}
+
+.c-nav__button--active .c-nav__button--bar::after {
+    transform: translate3d(0,-20px,0) rotate(-90deg);
 }

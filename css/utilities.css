@@ -23,11 +23,22 @@
     font-size: var(--text-l);
 }
 
-.u-text-primary {
-    font-family: var(--font-family);
+.u-text--primary {
+    font-family: var(--font-magenta);
 }
 
 /* Visibility */
 .u-hidden {
     display: none;
+}
+
+/* Clears */
+.u-clear--s {
+    clear: both;
+    height: var(--space-s);
+}
+
+.u-clear--m {
+    clear: both;
+    height: calc(4 * var(--space-m));
 }
