@@ -81,3 +81,32 @@
 .c-nav__button--active .c-nav__button--bar::after {
     transform: translate3d(0,-20px,0) rotate(-90deg);
 }
+
+/* Filters */
+.c-filters__item {
+    border-radius: var(--radius);
+    border: 2px solid var(--grey);
+    height: 40px;
+    line-height: 40px;
+    padding-left: var(--space-s);
+    padding-right: var(--space-s);
+}
+
+.c-filters__item:not(:first-child):not(:last-child) {
+    margin: 0 var(--space-s);
+}
+
+.c-filters__item--medium {
+    background: rgba(var(--medium), .1);
+    border-color: rgb(var(--medium));
+}
+
+.c-filters__item--hard {
+    background: rgba(var(--hard), .1);
+    border-color: rgb(var(--hard));
+}
+
+.c-filters__item--very-hard {
+    background: rgba(var(--very-hard), .1);
+    border-color: rgb(var(--very-hard));
+}

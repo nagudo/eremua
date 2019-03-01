@@ -27,6 +27,18 @@
     font-family: var(--font-magenta);
 }
 
+.u-text--medium {
+    color: var(--medium);
+}
+
+.u-text--hard {
+    color: var(--hard);
+}
+
+.u-text--very-hard {
+    color: var(--very-hard);
+}
+
 /* Visibility */
 .u-hidden {
     display: none;

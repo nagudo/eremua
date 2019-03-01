@@ -36,16 +36,16 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport"
         content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <link rel="stylesheet" type="text/css" href="../css/index.css">
-    <link rel="stylesheet" type="text/css" href="../css/custom.css">
-    <title>Eremua - Sobre nosotros</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <title>Eremua - Dónde quieres ir</title>
 </head>
 
 <body>
     <div class="app about">
         <!-- TODO Mover el código de c-nav a un HTML diferente para incluir en cada página -->
         <div class="c-nav">
-            <img class="c-nav__img" src="../img/nav.svg" alt="nav.svg" title ="Eremua - menu" />
+            <img class="c-nav__img" src="img/nav.svg" alt="nav.svg" title ="Eremua - menu" />
             <div class="c-nav__wrapper">
                 <div id="navButton" class="c-nav__button">
                     <div class="c-nav__button--bar"></div>
@@ -69,35 +69,39 @@
         </div>
         <!-- END TODO -->
         <div class="l-page u-text--center about__wrapper">
-            <h2>¿QUÉ ES EREMUA?</h2>
-            <p>
-                ¿Te imaginas rodar o correr entre hayedos centenarios y por senderos increibles preparados para que únicamente
-                disfrutes? EREMUA y sus bosques son un lugar hecho para sentir la naturaleza a cada paso que das. Aprovecha la
-                oportunidad de correr o pedalear en el escenario de la Nafarro Xtreme y dejate llevar! Un paraiso para la btt y trail te
-                espera en EREMUA.
-            </p>
+            <h2>¿DÓNDE QUIERES IR?</h2>
+            <div class="u-clear--s"></div>
+            <button class="c-button c-button--primary">MAPA 3d</button>
             <div class="u-clear--m"></div>
-            <h2>SIENTE EREMUA</h2>
-            <iframe width="100%" src="https://www.youtube.com/embed/mDFBTdToRmw" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="u-clear--m"></div>
-            <h2>SPONSORS</h2>
-            <p>
-                Este proyecto ha sido gracias al trabajo y colaboración de las siguientes Entidades y Organismos.
+            <p class="u-text--center">
+                Selecciona una dificultad o ruta
             </p>
-            <div class="o-sponsors">
-                <img class="o-sponsors__item" src="../img/sponsors/sponsor1.png" alt="Ayuntamiento Esteribar" title="Ayuntamiento Esteribar" />
-                <img class="o-sponsors__item" src="../img/sponsors/sponsor3.png" alt="Gobierno de Navarra" title="Gobierno de Navarra" />
-                <img class="o-sponsors__item" src="../img/sponsors/sponsor5.png" alt="Cadena Garalur" title="Cadena Garalur" />                
-                <img class="o-sponsors__item" src="../img/sponsors/sponsor2.png" alt="Concejo Eugi" title="Concejo Eugi" />
-                <img class="o-sponsors__item" src="../img/sponsors/sponsor4.png" alt="Fondo Leader" title="Fondo Leader" />
-                <img class="o-sponsors__item" src="../img/sponsors/sponsor6.png" alt="Fondo Europeo" title="Fondo Europeo" />
+            <div class="u-clear--s"></div>
+            <div class="c-filters l-page__item--out">
+                <button class="c-filters__item c-filters__item--medium">Media</button>
+                <button class="c-filters__item c-filters__item--hard">Difícil</button>
+                <button class="c-filters__item c-filters__item--very-hard">Muy difícil</button>
+            </div>
+            <div class="u-clear--m"></div>
+            <div class="o-cards l-page__item--out">
+                <div class="o-cards__item o-cards__item--medium">
+                    <img src="img/routes/01.jpg" alt="Sugea" title="Sugea">
+                    <h3><span>01 - Sugea</span></h3>
+                </div>
+                <div class="o-cards__item o-cards__item--hard">
+                    <img src="img/routes/01.jpg" alt="King Cobra" title="King Cobra">
+                    <h3><span>02 - King Cobra</span></h3>
+                </div>
+                <div class="o-cards__item o-cards__item--very-hard">
+                    <img src="img/routes/01.jpg" alt="Dragon Khan" title="Dragon Khan">
+                    <h3><span>03 - Dragon Khan</span></h3>
+                </div>
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="../cordova.js"></script>
-    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>

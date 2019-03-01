@@ -2,12 +2,18 @@
     --primary:  #ee8a1e;
     --text:     #1a1a1a;
 
-    --blue:    #0000ff;
-    --red:     #ff0000;
-    --black:   #000000;
+    --blue-rgb:       0, 0, 225;
+    --red-rgb:        225, 0 ,0;
+    --black-rgb:      0, 0 , 0;
 
     --white:    #fff;
     --grey:     #333;
+    --black:    #000;
+
+    /* Dificulty colors (in RGB)*/
+    --medium: var(--blue-rgb);
+    --hard: var(--red-rgb);
+    --very-hard: var(--black-rgb);
 
     /* Text size */
     --text-s:   .75rem;
@@ -24,4 +30,7 @@
     --space-s: .75em;
     --space-m: 1em;
     --space-l: 1.25em;
+
+    /* Roundness */
+    --radius: .25em;
 }
