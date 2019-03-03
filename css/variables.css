@@ -6,9 +6,11 @@
     --red-rgb:        225, 0 ,0;
     --black-rgb:      0, 0 , 0;
 
-    --white:    #fff;
-    --grey:     #333;
-    --black:    #000;
+    --white:        #fff;
+    --grey:         #333;
+    --neutral-grey: #666;
+    --light-grey:   #dedede;
+    --black:        #000;
 
     /* Dificulty colors (in RGB)*/
     --medium: var(--blue-rgb);
@@ -21,6 +23,7 @@
     --text-l:   1.25rem;
 
     --font-magenta: 'MagentaFont', Helvetica, Arial, sans-serif;
+    --font-helvetica--light: 'HelveticaNeue Light', Helvetica, Arial, sans-serif;
 
     --line-height-s: calc(1.35 * var(--text-s));
     --line-height-m: calc(1.35 * var(--text-m));

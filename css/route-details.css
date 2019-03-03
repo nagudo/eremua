@@ -1,0 +1,22 @@
+/* Styles for ROUTE DETAIL page */
+.o-route__title {
+    border-bottom: none;
+    font-family: var(--font-helvetica--light);
+    font-size: calc(1.5 * var(--text-l));
+    line-height: calc(1.5 * var(--text-l));
+    margin-bottom: calc(.5 * var(--space-s));
+    padding-bottom: 0;
+}
+.o-details {
+    margin: calc(3 * var(--space-s)) 0;
+}
+.o-details__item {
+    margin-bottom: var(--space-s);
+}
+
+@media only screen and (min-width: 500px) {
+    .o-details {
+        display: flex;
+        justify-content: space-between;
+    }
+}

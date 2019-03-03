@@ -28,15 +28,15 @@
 }
 
 .u-text--medium {
-    color: var(--medium);
+    color: rgba(var(--medium));
 }
 
 .u-text--hard {
-    color: var(--hard);
+    color: rgba(var(--hard));
 }
 
 .u-text--very-hard {
-    color: var(--very-hard);
+    color: rgba(var(--very-hard));
 }
 
 /* Visibility */
@@ -52,5 +52,5 @@
 
 .u-clear--m {
     clear: both;
-    height: calc(4 * var(--space-m));
+    height: calc(3 * var(--space-m));
 }

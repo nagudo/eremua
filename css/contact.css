@@ -1,0 +1,32 @@
+/* Styles for CONTACT page */
+
+.o-form__group {
+    display: flex;
+    min-height: 40px;
+    margin-bottom: var(--space-m);
+}
+
+.o-form__group label {
+    background: var(--light-grey);
+    width: 40px;
+}
+
+.o-form__group .fas {
+    color: var(--neutral-grey);
+    line-height: 40px;
+}
+
+.o-form__group input,
+.o-form__group textarea {
+    border-width: 2px 1px 1px 1px;
+    border-color: var(--light-grey);
+    border-style: solid;
+    flex-grow: 1;
+    padding: 0;
+    padding-left: 1em;
+}
+
+.o-form__group textarea {
+    min-height: 100px;
+    padding-top: .75em;
+}

@@ -3,7 +3,7 @@
 body {
     background: var(--white);
     color: var(--grey);
-    font-family: 'HelveticaNeue Light', Helvetica, Arial, sans-serif;
+    font-family: var(--font-helvetica--light);
     line-height: var(--line-height-m);
 }
 
@@ -21,6 +21,10 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: var(--text-l);
     margin: 0 auto var(--space-m);
-    padding-bottom: 0.25em;
+    padding-bottom: .25em;
     width: 90%;
+}
+
+a {
+    color: var(--primary);
 }
