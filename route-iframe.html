@@ -30,8 +30,8 @@
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <!--<meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport"
@@ -41,7 +41,7 @@
     <title>Eremua - Sugea - Mapa</title>
 </head>
 
-<body>
+<body onload="onBodyLoad()">
     <div class="app about">
         <!-- TODO Mover el código de c-nav a un HTML diferente para incluir en cada página -->
         <div class="c-nav">
@@ -70,21 +70,27 @@
         <!-- END TODO -->
         <div class="l-page u-text--center about__wrapper">
             <div class="l-page__item--out">
-                <img src="img/route-bar.jpg" alt="Detalles sugea" title="Detalles Sugea" />
+                <img src="img/routebar/route-bar.jpg" alt="Detalles sugea" title="Detalles Sugea" />
             </div>
             <div class="u-clear--s"></div>
             <h2 class="o-route__title">SUGEA</h2>
             <h3 class="u-text--medium">DIFICULTAD MEDIA</h3>
             <div class="u-clear--m"></div>
-            <iframe src=""></iframe>
+            <iframe src="https://www.google.com/maps/d/u/3/embed?mid=1BWd1vkKdtrsUqRApp9_VB10tJ7s" width="100%" height="480"></iframe>
+            <div class="text-center">
+                Pulsa el icono [  ] para iniciar ruta
+            </div>
             <div class="u-clear--m"></div>
-            <button class="c-button c-button--primary">DESCARGAR GPX</button>
+            <button class="c-button c-button--primary" onclick="fileDownload('tracks/00.Sugea OFICIAL.GPX')">DESCARGAR GPX</button>
+            <div class="u-clear--s"></div>
+            <button class="c-button c-button--primary" onclick="fileDownload('documentos/fichas/00.Sugea.pdf')">DESCARGAR PDF</button>
             <div class="u-clear--s"></div>
         </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/download.js"></script>
 </body>
 
 </html>
