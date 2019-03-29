@@ -14,11 +14,13 @@
     /* Animation */
     transition: 1s;
     left: -100vw;
+    z-index: 1;
 }
 
 .o-nav__menu--visible {
     transition: 1s;
     left: 0;
+    z-index: 1;
 }
 
 .o-nav__items {
@@ -29,6 +31,11 @@
 
 .o-nav__items li {
     padding: var(--space-s) 0;
+}
+
+.o-nav__items li a {
+    color: var(--white);
+    text-decoration: none;
 }
 
 .o-nav__items:not(.o-nav__items--primary) {

@@ -47,6 +47,7 @@ app.initialize();
 
 function toggleMenu() {
     $('.o-nav__menu').toggleClass('o-nav__menu--visible');
+    $('.app').toggleClass('l-scroll--hide');
 }
 
 (function ($) {

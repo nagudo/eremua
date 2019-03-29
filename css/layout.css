@@ -16,6 +16,11 @@ body {
     margin-right: calc(-2.5 * var(--space-m))
 }
 
+.l-scroll--hide {
+    height: 100vh;
+    overflow: hidden;
+}
+
 h2 {
     border-bottom: 5px solid var(--primary);
     font-family: Arial, Helvetica, sans-serif;
