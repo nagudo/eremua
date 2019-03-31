@@ -50,9 +50,29 @@ function toggleMenu() {
     $('.app').toggleClass('l-scroll--hide');
 }
 
+function toggleRoutes(filterDifficulty) {
+    var filterDifficultyClass = '.c-filters__item--' + filterDifficulty;
+    var routeDifficultyClass = '.o-cards__item--' + filterDifficulty;
+
+    $('#filterList .c-filters__item:not(' + filterDifficultyClass + ')').addClass('c-filters__item--deactive');
+    $('#filterList').find(filterDifficultyClass).removeClass('c-filters__item--deactive');
+
+    
+
+    $('#routeList .o-cards__item').hide()
+
+    if ($('#filterList').find('.c-filters__item--deactive').length == 0) {
+        $('#routeList .o-cards__item').show()
+    } else {
+        $('#routeList').find(routeDifficultyClass).show();
+    }
+}
+
 (function ($) {
     $("#navButton").click(function () {
         toggleMenu();
         $(this).toggleClass('c-nav__button--active');
     });
+
+
 })(jQuery);

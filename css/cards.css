@@ -2,12 +2,9 @@
 
 .o-cards__item {
     height: 150px;
+    margin-top: var(--space-m);
     overflow: hidden;
     position: relative;
-}
-
-.o-cards__item:not(:first-child) {
-    margin-top: var(--space-m);
 }
 
 .o-cards__item img {

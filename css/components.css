@@ -132,3 +132,8 @@
     background: rgba(var(--very-hard), .1);
     border-color: rgb(var(--very-hard));
 }
+
+.c-filters__item--deactive {
+    background: rgba(var(--light-grey), .1);
+    border-color: rgb(var(--neutral-grey));
+}

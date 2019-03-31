@@ -30,8 +30,6 @@
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport"
@@ -77,13 +75,13 @@
                 Selecciona una dificultad o ruta
             </p>
             <div class="u-clear--s"></div>
-            <div class="c-filters l-page__item--out">
-                <button class="c-filters__item c-filters__item--medium">Media</button>
-                <button class="c-filters__item c-filters__item--hard">Difícil</button>
-                <button class="c-filters__item c-filters__item--very-hard">Muy difícil</button>
+            <div id="filterList" class="c-filters l-page__item--out">
+                <button class="c-filters__item c-filters__item--medium" onclick="toggleRoutes('medium')">Media</button>
+                <button class="c-filters__item c-filters__item--hard" onclick="toggleRoutes('hard')">Difícil</button>
+                <button class="c-filters__item c-filters__item--very-hard" onclick="toggleRoutes('very-hard')">Muy difícil</button>
             </div>
             <div class="u-clear--m"></div>
-            <div class="o-cards l-page__item--out">
+            <div id="routeList" class="o-cards l-page__item--out">
                 <a href="route-detail.html" title="Sugea">
                     <div class="o-cards__item o-cards__item--medium">
                         <img src="img/routes/01.jpg" alt="Sugea" title="Sugea">
