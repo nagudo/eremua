@@ -1,6 +1,7 @@
 /* Styles for page with cards */
 
 .o-cards__item {
+    display: block;
     height: 150px;
     margin-top: var(--space-m);
     overflow: hidden;
@@ -44,9 +45,5 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
-    }
-
-    .o-cards__item:not(:first-child) {
-        margin-top: 0;
     }
 }

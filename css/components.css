@@ -6,6 +6,7 @@
 .c-button {
     background-color: var(--white);;
     border: 1px solid var(--black);
+    display: inline-block;
     font-family: var(--font-magenta);
     text-align: center;
     text-decoration: none;
@@ -17,9 +18,16 @@
     color: var(--white);
 }
 
+.c-button--simple {
+    border-color: transparent;
+    padding: 0;
+}
+
 /* Navigation */
-.c-nav {
+.c-nav,
+.c-nav__lang {
     color: var(--white);
+    text-decoration: none;
 }
 
 .c-nav__img {
@@ -112,6 +120,12 @@
     min-width: 95px;
     padding-left: var(--space-s);
     padding-right: var(--space-s);
+}
+
+.c-filters__item:focus {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .c-filters__item:not(:first-child):not(:last-child) {
