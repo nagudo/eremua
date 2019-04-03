@@ -148,6 +148,5 @@
 }
 
 .c-filters__item--deactive {
-    background: rgba(var(--light-grey), .1);
-    border-color: rgb(var(--neutral-grey));
+    opacity: .4;
 }
