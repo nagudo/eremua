@@ -22,7 +22,7 @@
                     <div class="c-nav__button--bar"></div>
                 </div>
                 <span class="c-nav__lang--active u-text--primary u-text--small">ESPAÑOL</span>
-                <div class="c-nav__lang u-text--primary u-text--small">EU</div>
+                <a href="routesEU.html" title="Cambiar idioma" class="c-nav__lang u-text--primary u-text--small">EU</a>
             </div>
             <div class="o-nav__menu">
                 <ul class="o-nav__items o-nav__items--primary">
@@ -48,9 +48,9 @@
             </p>
             <div class="u-clear--s"></div>
             <div id="filterList" class="c-filters l-page__item--out">
-                <button class="c-filters__item c-filters__item--medium" onclick="toggleRoutes('medium')">Media</button>
-                <button class="c-filters__item c-filters__item--hard" onclick="toggleRoutes('hard')">Difícil</button>
-                <button class="c-filters__item c-filters__item--very-hard" onclick="toggleRoutes('very-hard')">Muy difícil</button>
+                <button class="c-filters__item c-filters__item--medium" data-route-class="o-cards__item--medium" >Media</button>
+                <button class="c-filters__item c-filters__item--hard" data-route-class="o-cards__item--hard">Difícil</button>
+                <button class="c-filters__item c-filters__item--very-hard" data-route-class="o-cards__item--very-hard">Muy difícil</button>
             </div>
             <div class="u-clear--s"></div>
             <div id="routeList" class="o-cards l-page__item--out">
@@ -126,6 +126,26 @@
                         <h3><span>11 - Revirada</span></h3>
                     </div>
                 </a>
+                <!--
+                =======
+                <a href="route-detail.html" title="Sugea" class="o-cards__item o-cards__item--medium">
+                    <img src="img/routes/01.jpg" alt="Sugea" title="Sugea">
+                    <h3><span>01 - Sugea</span></h3>
+                </a>
+                <a href="route-detail.html" title="King Cobra" class="o-cards__item o-cards__item--hard">
+                    <img src="img/routes/01.jpg" alt="King Cobra" title="King Cobra">
+                    <h3><span>02 - King Cobra</span></h3>
+                </a>
+                <a href="route-detail.html" title="Dragon Khan" class="o-cards__item o-cards__item--very-hard">
+                    <img src="img/routes/01.jpg" alt="Dragon Khan" title="Dragon Khan">
+                    <h3><span>03 - Dragon Khan</span></h3>
+                </a>
+                <a href="route-detail.html" title="Dragon Khan" class="o-cards__item o-cards__item--very-hard">
+                    <img src="img/routes/01.jpg" alt="Dragon Khan" title="Dragon Khan">
+                    <h3><span>03 - Dragon Khan</span></h3>
+                </a>
+            >>>>>>> 0e15c8744a1793293c284a9f4e1e6c7e63c4613a
+            -->
             </div>
         </div>
         <div class="u-clear--s"></div>
@@ -133,6 +153,7 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/track-filter.js"></script>
 </body>
 
 </html>
