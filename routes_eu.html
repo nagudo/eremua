@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
@@ -12,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <title>Eremua - Nora nahi duzu joan?</title>
 </head>
-
 <body>
     <div class="app about">
         <div class="c-nav">
@@ -22,7 +19,7 @@
                     <div class="c-nav__button--bar"></div>
                 </div>
                 <span class="c-nav__lang--active u-text--primary u-text--small">EUSKERA</span>
-                <div class="c-nav__lang u-text--primary u-text--small">ES</div>
+                <a href="routes.html" title="Cambiar idioma" class="c-nav__lang u-text--primary u-text--small">ES</a>
             </div>
             <div class="o-nav__menu">
                 <ul class="o-nav__items o-nav__items--primary">
@@ -31,10 +28,9 @@
                     <li><a href="routes_eu.html" title="VER RUTAS">IBILBIDEAK</a></li>
                     <li><a href="./contact_eu.html" title="CONTACTO">HARREMANA</a></li>
                 </ul>
-                
                 <ul class="o-nav__items">
-                    <li><a href="./recommend.html" title="RECOMENDACIONES">RECOMENDACIONES</a></li>
-                    <li><a href="./legal.html" title="AVISO LEGAL">AVISO LEGAL</a></li>
+                    <li><a href="./recommend_eu.html" title="RECOMENDACIONES">GOMENDIOAK</a></li>
+                    <li><a href="./legal_eu.html" title="AVISO LEGAL">LEGE OHARRA</a></li>
                 </ul>
             </div>
         </div>
@@ -48,26 +44,60 @@
             </p>
             <div class="u-clear--s"></div>
             <div id="filterList" class="c-filters l-page__item--out">
-                <button class="c-filters__item c-filters__item--medium" onclick="toggleRoutes('medium')">Ertaina</button>
-                <button class="c-filters__item c-filters__item--hard" onclick="toggleRoutes('hard')">Zaila</button>
-                <button class="c-filters__item c-filters__item--very-hard" onclick="toggleRoutes('very-hard')">Oso zaila</button>
+                <button class="c-filters__item c-filters__item--medium" data-route-class="o-cards__item--medium" >Ertaina</button>
+                <button class="c-filters__item c-filters__item--hard" data-route-class="o-cards__item--hard">Zaila</button>
+                <button class="c-filters__item c-filters__item--very-hard" data-route-class="o-cards__item--very-hard">Oso zaila</button>
             </div>
             <div class="u-clear--s"></div>
             <div id="routeList" class="o-cards l-page__item--out">
-                <a href="route-detail.html" title="Sugea">
-                    <div class="o-cards__item o-cards__item--medium">
+                <a href="route-detail00_eu.html" title="Sugea" class="o-cards__item o-cards__item--medium">
                         <img src="img/routes/00fotoruta.jpg" alt="Sugea" title="Sugea">
-                        <h3><span>01 - Sugea</span></h3>
-                    </div>
+                        <h3><span>00 - Sugea</span></h3>
                 </a>
-                <div class="o-cards__item o-cards__item--hard">
-                    <img src="img/routes/00fotoruta.jpg" alt="King Cobra" title="King Cobra">
-                    <h3><span>02 - King Cobra</span></h3>
-                </div>
-                <div class="o-cards__item o-cards__item--very-hard">
-                    <img src="img/routes/00fotoruta.jpg" alt="Dragon Khan" title="Dragon Khan">
-                    <h3><span>03 - Dragon Khan</span></h3>
-                </div>
+                <a href="route-detail01_eu.html" title="King Cobra" class="o-cards__item o-cards__item--hard">
+                        <img src="img/routes/01fotoruta.jpg" alt="King Cobra" title="King Cobra">
+                        <h3><span>01 - King Cobra</span></h3>
+                </a>
+                <a href="route-detail02_eu.html" title="Dragon Khan" class="o-cards__item o-cards__item--very-hard">
+                        <img src="img/routes/02fotoruta.jpg" alt="Dragon Khan" title="Dragon Khan">
+                        <h3><span>02 - Dragon Khan</span></h3>
+                </a>
+                <a href="route-detail03_eu.html" title="Carboneras" class="o-cards__item o-cards__item--medium">
+                        <img src="img/routes/03fotoruta.jpg" alt="Carboneras" title="Carboneras">
+                        <h3><span>03 - Carboneras</span></h3>
+                </a>
+                <a href="route-detail04_eu.html" title="Magnum" class="o-cards__item o-cards__item--hard">
+                        <img src="img/routes/04fotoruta.jpg" alt="Magnum" title="Magnum">
+                        <h3><span>04 - Magnum</span></h3>
+                </a>
+                <a href="route-detail05_eu.html" title="Secret" class="o-cards__item o-cards__item--very-hard">
+                        <img src="img/routes/05fotoruta.jpg" alt="Secret" title="Secret">
+                        <h3><span>05 - Secret</span></h3>
+                </a>
+                <a href="route-detail06_eu.html" title="Konstan Tenssion" class="o-cards__item o-cards__item--hard">
+                        <img src="img/routes/06fotoruta.jpg" alt="Konstan Tenssion" title="Konstan Tenssion">
+                        <h3><span>06 - Konstan Tenssion</span></h3>
+                </a>
+                <a href="route-detail07_eu.html" title="Nafar Whistler" class="o-cards__item o-cards__item--very-hard">
+                        <img src="img/routes/07fotoruta.jpg" alt="Nafar Whistler" title="Nafar Whistler">
+                        <h3><span>07 - Nafar Whistler</span></h3>
+                </a>
+                <a href="route-detail08_eu.html" title="Urtasun" class="o-cards__item o-cards__item--hard">
+                        <img src="img/routes/08fotoruta.jpg" alt="Urtasun" title="Urtasun">
+                        <h3><span>08 - Urtasun</span></h3>
+                </a>
+                <a href="route-detail09_eu.html" title="Azegi-Etxarro-Saigots" class="o-cards__item o-cards__item--hard">
+                        <img src="img/routes/09fotoruta.jpg" alt="Azegi-Etxarro-Saigots" title="Azegi-Etxarro-Saigots">
+                        <h3><span>09 - Azegi-Etxarro-Saigots</span></h3>
+                </a>
+                <a href="route-detail10_eu.html" title="Saigots" class="o-cards__item o-cards__item--hard">
+                        <img src="img/routes/10fotoruta.jpg" alt="Saigots" title="Saigots">
+                        <h3><span>10 - Saigots</span></h3>
+                </a>
+                <a href="route-detail11_eu.html" title="Revirada" class="o-cards__item o-cards__item--hard">
+                        <img src="img/routes/11fotoruta.jpg" alt="Revirada" title="Revirada">
+                        <h3><span>11 - Revirada</span></h3>
+                </a>
             </div>
         </div>
         <div class="u-clear--s"></div>
@@ -75,6 +105,6 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/track-filter.js"></script>
 </body>
-
 </html>
