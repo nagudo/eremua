@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <title>Eremua - Nora nahi duzu joan?</title>
+</head>
+
+<body>
+    <div class="app about">
+        <div class="c-nav">
+            <img class="c-nav__img" src="img/nav.svg" alt="nav.svg" title ="Eremua - menu" />
+            <div class="c-nav__wrapper">
+                <div id="navButton" class="c-nav__button">
+                    <div class="c-nav__button--bar"></div>
+                </div>
+                <span class="c-nav__lang--active u-text--primary u-text--small">EUSKERA</span>
+                <div class="c-nav__lang u-text--primary u-text--small">ES</div>
+            </div>
+            <div class="o-nav__menu">
+                <ul class="o-nav__items o-nav__items--primary">
+                    <li><a href="./index.html" title="INICIO">HASIERA</a></li>
+                    <li><a href="./about_eu.html" title="EREMUA">EREMUA</a></li>
+                    <li><a href="routes_eu.html" title="VER RUTAS">IBILBIDEAK</a></li>
+                    <li><a href="./contact_eu.html" title="CONTACTO">HARREMANA</a></li>
+                </ul>
+                
+                <ul class="o-nav__items">
+                    <li><a href="./recommend.html" title="RECOMENDACIONES">RECOMENDACIONES</a></li>
+                    <li><a href="./legal.html" title="AVISO LEGAL">AVISO LEGAL</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="l-page u-text--center about__wrapper">
+            <h2>NORA NAHI DUZU JOAN?</h2>
+            <div class="u-clear--s"></div>
+            <!--<a class="c-button c-button--primary" href="3d-map.html">MAPA 3d</a>
+            <div class="u-clear--m"></div>-->
+            <p class="u-text--center">
+                Aukeratu zure ibilbidea
+            </p>
+            <div class="u-clear--s"></div>
+            <div id="filterList" class="c-filters l-page__item--out">
+                <button class="c-filters__item c-filters__item--medium" onclick="toggleRoutes('medium')">Ertaina</button>
+                <button class="c-filters__item c-filters__item--hard" onclick="toggleRoutes('hard')">Zaila</button>
+                <button class="c-filters__item c-filters__item--very-hard" onclick="toggleRoutes('very-hard')">Oso zaila</button>
+            </div>
+            <div class="u-clear--s"></div>
+            <div id="routeList" class="o-cards l-page__item--out">
+                <a href="route-detail.html" title="Sugea">
+                    <div class="o-cards__item o-cards__item--medium">
+                        <img src="img/routes/00fotoruta.jpg" alt="Sugea" title="Sugea">
+                        <h3><span>01 - Sugea</span></h3>
+                    </div>
+                </a>
+                <div class="o-cards__item o-cards__item--hard">
+                    <img src="img/routes/00fotoruta.jpg" alt="King Cobra" title="King Cobra">
+                    <h3><span>02 - King Cobra</span></h3>
+                </div>
+                <div class="o-cards__item o-cards__item--very-hard">
+                    <img src="img/routes/00fotoruta.jpg" alt="Dragon Khan" title="Dragon Khan">
+                    <h3><span>03 - Dragon Khan</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="u-clear--s"></div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

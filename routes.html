@@ -1,34 +1,8 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
 
 <head>
-    <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
@@ -41,7 +15,6 @@
 
 <body>
     <div class="app about">
-        <!-- TODO Mover el código de c-nav a un HTML diferente para incluir en cada página -->
         <div class="c-nav">
             <img class="c-nav__img" src="img/nav.svg" alt="nav.svg" title ="Eremua - menu" />
             <div class="c-nav__wrapper">
@@ -65,12 +38,11 @@
                 </ul>
             </div>
         </div>
-        <!-- END TODO -->
         <div class="l-page u-text--center about__wrapper">
             <h2>¿DÓNDE QUIERES IR?</h2>
             <div class="u-clear--s"></div>
-            <a class="c-button c-button--primary" href="3d-map.html">MAPA 3d</a>
-            <div class="u-clear--m"></div>
+            <!--<a class="c-button c-button--primary" href="3d-map.html">MAPA 3d</a>
+            <div class="u-clear--m"></div>-->
             <p class="u-text--center">
                 Selecciona una dificultad o ruta
             </p>
@@ -80,24 +52,83 @@
                 <button class="c-filters__item c-filters__item--hard" onclick="toggleRoutes('hard')">Difícil</button>
                 <button class="c-filters__item c-filters__item--very-hard" onclick="toggleRoutes('very-hard')">Muy difícil</button>
             </div>
-            <div class="u-clear--m"></div>
+            <div class="u-clear--s"></div>
             <div id="routeList" class="o-cards l-page__item--out">
                 <a href="route-detail.html" title="Sugea">
                     <div class="o-cards__item o-cards__item--medium">
-                        <img src="img/routes/01.jpg" alt="Sugea" title="Sugea">
-                        <h3><span>01 - Sugea</span></h3>
+                        <img src="img/routes/00fotoruta.jpg" alt="Sugea" title="Sugea">
+                        <h3><span>00 - Sugea</span></h3>
                     </div>
                 </a>
-                <div class="o-cards__item o-cards__item--hard">
-                    <img src="img/routes/01.jpg" alt="King Cobra" title="King Cobra">
-                    <h3><span>02 - King Cobra</span></h3>
-                </div>
-                <div class="o-cards__item o-cards__item--very-hard">
-                    <img src="img/routes/01.jpg" alt="Dragon Khan" title="Dragon Khan">
-                    <h3><span>03 - Dragon Khan</span></h3>
-                </div>
+                <a href="route-detail.html" title="King Cobra">
+                    <div class="o-cards__item o-cards__item--hard">
+                        <img src="img/routes/00fotoruta.jpg" alt="King Cobra" title="King Cobra">
+                        <h3><span>01 - King Cobra</span></h3>
+                    </div>
+                </a>
+                <a href="route-detail.html" title="Dragon Khan">
+                    <div class="o-cards__item o-cards__item--very-hard">
+                        <img src="img/routes/00fotoruta.jpg" alt="Dragon Khan" title="Dragon Khan">
+                        <h3><span>02 - Dragon Khan</span></h3>
+                    </div>
+                </a>
+                <a href="route-detail.html" title="Carboneras">
+                    <div class="o-cards__item o-cards__item--medium">
+                        <img src="img/routes/00fotoruta.jpg" alt="Carboneras" title="Carboneras">
+                        <h3><span>03 - Carboneras</span></h3>
+                    </div>
+                </a>
+                <a href="route-detail.html" title="Magnum">
+                    <div class="o-cards__item o-cards__item--hard">
+                        <img src="img/routes/00fotoruta.jpg" alt="Magnum" title="Magnum">
+                        <h3><span>04 - Magnum</span></h3>
+                    </div>
+                </a>
+                <a href="route-detail.html" title="Secret">
+                    <div class="o-cards__item o-cards__item--very-hard">
+                        <img src="img/routes/00fotoruta.jpg" alt="Secret" title="Secret">
+                        <h3><span>05 - Secret</span></h3>
+                    </div>
+                </a>
+                <a href="route-detail.html" title="Konstan Tenssion">
+                    <div class="o-cards__item o-cards__item--hard">
+                        <img src="img/routes/00fotoruta.jpg" alt="Konstan Tenssion" title="Konstan Tenssion">
+                        <h3><span>06 - Konstan Tenssion</span></h3>
+                    </div>
+                </a>
+                <a href="route-detail.html" title="Nafar Whistler">
+                    <div class="o-cards__item o-cards__item--very-hard">
+                        <img src="img/routes/00fotoruta.jpg" alt="Nafar Whistler" title="Nafar Whistler">
+                        <h3><span>07 - Nafar Whistler</span></h3>
+                    </div>
+                </a>
+                <a href="route-detail.html" title="Urtasun">
+                    <div class="o-cards__item o-cards__item--hard">
+                        <img src="img/routes/00fotoruta.jpg" alt="Urtasun" title="Urtasun">
+                        <h3><span>08 - Urtasun</span></h3>
+                    </div>
+                </a>
+                <a href="route-detail.html" title="Azegi-Etxarro-Saigots">
+                    <div class="o-cards__item o-cards__item--hard">
+                        <img src="img/routes/00fotoruta.jpg" alt="Azegi-Etxarro-Saigots" title="Azegi-Etxarro-Saigots">
+                        <h3><span>09 - Azegi-Etxarro-Saigots</span></h3>
+                    </div>
+                </a>
+                <a href="route-detail.html" title="Saigots">
+                    <div class="o-cards__item o-cards__item--hard">
+                        <img src="img/routes/00fotoruta.jpg" alt="Saigots" title="Saigots">
+                        <h3><span>10 - Saigots</span></h3>
+                    </div>
+                </a>
+                <a href="route-detail.html" title="Revirada">
+                    <div class="o-cards__item o-cards__item--hard">
+                        <img src="img/routes/00fotoruta.jpg" alt="Revirada" title="Revirada">
+                        <h3><span>11 - Revirada</span></h3>
+                    </div>
+                </a>
             </div>
         </div>
+        <div class="u-clear--s"></div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>

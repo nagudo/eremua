@@ -1,34 +1,8 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
 
 <head>
-    <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
     <meta charset="UTF-8">
     <!--<meta http-equiv="Content-Security-Policy"
         content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
@@ -39,13 +13,12 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <link rel="stylesheet" href="css/fonts/fontawesome-free-5.7.2-web/css/fontawesome.min.css">
-    u-text--small <link rel="stylesheet" href="css/fonts/fontawesome-free-5.7.2-web/css/solid.min.css">
+    <link rel="stylesheet" href="css/fonts/fontawesome-free-5.7.2-web/css/solid.min.css">
     <title>Eremua - Sugea - Mapa</title>
 </head>
 
 <body onload="onBodyLoad()">
     <div class="app about">
-        <!-- TODO Mover el código de c-nav a un HTML diferente para incluir en cada página -->
         <div class="c-nav">
             <img class="c-nav__img" src="img/nav.svg" alt="nav.svg" title ="Eremua - menu" />
             <div class="c-nav__wrapper">
@@ -69,17 +42,15 @@
                 </ul>
             </div>
         </div>
-        <!-- END TODO -->
         <div class="l-page u-text--center about__wrapper">
             <div class="l-page__item--out">
-                <img src="img/routebar/route-bar.jpg" alt="Detalles sugea" title="Detalles Sugea" />
+                <img src="img/datosrutas/00datos.jpg" alt="Detalles sugea" title="Detalles Sugea" />
             </div>
             <div class="u-clear--s"></div>
             <h2 class="o-route__title">SUGEA</h2>
             <h3 class="u-text--medium">DIFICULTAD MEDIA</h3>
             <div class="u-clear--m"></div>
-            <!--<iframe src="https://www.google.com/maps/d/u/3/embed?mid=1BWd1vkKdtrsUqRApp9_VB10tJ7s" width="100%" height="480"></iframe>-->
-            <iframe src="https://www.google.com/maps/d/embed?mid=1_qTg1zMzaIQmUyHwMT7eOw5VoppwqYTX" width="100%" height="480"></iframe>          
+            <iframe src="https://www.google.com/maps/d/embed?mid=1_qTg1zMzaIQmUyHwMT7eOw5VoppwqYTX" width="100%" height="480"></iframe>
             <div class="text-center">
                 Pulsa el icono [  ] para iniciar ruta
             </div>
