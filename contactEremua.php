@@ -15,7 +15,7 @@ if ($_POST['submit'])
 		?>
 		<script type="text/javascript" language="javascript">// <![CDATA[
 			alert('Mensaje enviado, muchas gracias.');
-			window.location.href = 'http://www.eremua.com';
+			//window.location.href = 'http://www.eremua.com';
 		// ]]></script>
 		<?php
 
@@ -27,7 +27,7 @@ if ($_POST['submit'])
 			
 alert('No se ha podido realizar el envio, pruebe de nuevo.');
 
-			window.location.href = 'http://www.eremua.com';
+			//window.location.href = 'http://www.eremua.com';
 		// ]]></script>
 		<?php
 	}
