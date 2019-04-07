@@ -11,6 +11,10 @@ body {
     padding: var(--space-m) calc(2.5 * var(--space-m));
 }
 
+.l-page p {
+    text-align: justify;
+}
+
 .l-page__item--out {
     margin-left: calc(-2.5 * var(--space-m));
     margin-right: calc(-2.5 * var(--space-m))
