@@ -2,13 +2,21 @@
 
 .o-cards__item {
     display: block;
-    height: 150px;
     margin-top: var(--space-m);
+    text-decoration: none;
+}
+
+.o-cards__item div {
+    height: 150px;
     overflow: hidden;
     position: relative;
 }
 
 .o-cards__item img {
+    right: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 100%;
 }
 
@@ -18,9 +26,6 @@
     text-align: left;
     padding: calc(var(--space-s)/2) var(--space-s);
     width: 100%;
-
-    position: absolute;
-    bottom: 0;
 }
 
 .o-cards__item h3 span {
@@ -29,15 +34,15 @@
 }
 
 .o-cards__item--medium h3 {
-    background: rgba(var(--medium), .5);
+    background: rgb(var(--medium));
 }
 
 .o-cards__item--hard h3 {
-    background: rgba(var(--hard), .5);
+    background: rgb(var(--hard));
 }
 
 .o-cards__item--very-hard h3 {
-    background: rgba(var(--very-hard), .5);
+    background: rgb(var(--very-hard));
 }
 
 @media only screen and (min-width: 500px) {

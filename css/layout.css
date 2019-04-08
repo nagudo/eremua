@@ -2,7 +2,7 @@
 
 body {
     background: var(--white);
-    color: var(--grey);
+    color: var(--neutral-grey);
     font-family: var(--font-helvetica--light);
     line-height: var(--line-height-m);
 }
