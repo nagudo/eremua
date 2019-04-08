@@ -24,15 +24,15 @@
 }
 
 .o-cards__item--medium h3 {
-    background: rgba(var(--medium), .75);
+    background: rgba(var(--medium), .6);
 }
 
 .o-cards__item--hard h3 {
-    background: rgba(var(--hard), .75);
+    background: rgba(var(--hard), .6);
 }
 
 .o-cards__item--very-hard h3 {
-    background: rgba(var(--very-hard), .75);
+    background: rgba(var(--very-hard), .6);
 }
 
 @media only screen and (min-width: 500px) {
