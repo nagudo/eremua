@@ -6,17 +6,7 @@
     text-decoration: none;
 }
 
-.o-cards__item div {
-    height: 150px;
-    overflow: hidden;
-    position: relative;
-}
-
 .o-cards__item img {
-    right: 0;
-    position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100%;
 }
 
