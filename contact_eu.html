@@ -44,36 +44,37 @@
         </div>
         <div class="l-page u-text--center about__wrapper">
             <h2>HARREMANA</h2>
+            <div class="u-clear--s"></div>
+                <p>
+                    Ibilbideei, seinaleei edo edozein gairi buruz iradokizun edo komentarioren bat egin nahi badiguzu hauxe da zure tokia!
+                </p>
+            <div class="u-clear--s"></div>
             <div class="o-details">
                 <div class="o-details__item">
-                    <div>Teléfono</div>
-                    <a href="tel:0034615826150">+34 615 826 150</a>
-                </div>
-                <div class="o-details__item">
-                    <div>Correo electrónico</div>
+                    <div>Posta Elektronikoa</div>
                     <a href="mailto:info@eremua.com" title="info@eremua.com">info@eremua.com</a>
                 </div>
             </div>
-            <form class="o-form">
+            <form name="contactform" method="post" action="http://www.nachoagudo.com/contactEremua.php" class="o-form">
                 <div class="o-form__group">
                     <label><span class="fas fa-user"></span></label>
-                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Izena" name="nombre">
                 </div>
                 <div class="o-form__group">
                     <label><span class="fas fa-at"></span></label>
-                    <input type="text" placeholder="Correo electrónico">
+                    <input type="text" placeholder="Posta Elektronikoa" name="email">
                 </div>
                 <div class="o-form__group">
                     <label><span class="fas fa-globe-europe"></span></label>
-                    <input type="text" placeholder="Asunto">
+                    <input type="text" placeholder="Gaia" name="asunto">
                 </div>
                 <div class="o-form__group">
                     <label><span class="fas fa-envelope"></span></label>
-                    <textarea placeholder="Escribe tu mensaje"></textarea>
+                    <textarea placeholder="Zure mezua idatzi" name="mensaje"></textarea>
                 </div>
+                <div class="u-clear--s"></div>
+                <input type="submit" class="c-button c-button--primary" id="submit"  name="submit" value="Mezua bidali"></input>
             </form>
-            <div class="u-clear--s"></div>
-            <button class="c-button c-button--primary">ENVIAR</button>
             <div class="u-clear--s"></div>
         </div>
     </div>
