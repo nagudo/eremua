@@ -6,7 +6,7 @@ $mensaje = $_POST['mensaje'];
 $para = 'nachoecha@gmail.com';
 $titulo = $_POST['asunto'];
 $header = 'From: ' . $email . "\r\n";
-$header .= "MIME-Version: 1.0\r\n";
+//$header .= "MIME-Version: 1.0\r\n";
 $header .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 //$msjCorreo = "Nombre: $nombre\n E-Mail: $email\n Asunto:\n $asunto\n Mensaje:\n $mensaje";
 $msjCorreo = '<html><body style="background: #f5f5f5; font-family:Arial, serif; padding: 20px;">';
@@ -40,7 +40,7 @@ if ($_POST['submit'])
 		<script type="text/javascript" language="javascript">// <![CDATA[
 			alert('Mensaje enviado, muchas gracias.');
 			//window.location.href = 'http://www.eremua.com';
-		// ]]></script>
+		</script>
 		<?php
 
 	}
@@ -48,11 +48,9 @@ if ($_POST['submit'])
 	{
 		?>
 		<script type="text/javascript" language="javascript">// <![CDATA[
-			
-alert('No se ha podido realizar el envio, pruebe de nuevo.');
-
+			alert('No se ha podido realizar el envio, pruebe de nuevo.');
 			//window.location.href = 'http://www.eremua.com';
-		// ]]></script>
+		</script>
 		<?php
 	}
 }
