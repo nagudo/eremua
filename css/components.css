@@ -150,3 +150,10 @@
 .c-filters__item--deactive {
     opacity: .4;
 }
+
+
+/* Iframe */
+.c-iframe {
+  width: 1px;
+  min-width: 100%;
+}
