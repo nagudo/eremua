@@ -1,6 +1,6 @@
 function getNativeDlPath() {
     var path = '';
-    //en funcion de la plataforma, la ruta donde se guarda el fichero GPX sera diferente (en android esta funcionando, 
+    //en funcion de la plataforma, la ruta donde se guarda el fichero GPX sera diferente (en android esta funcionando,
     //falta ios, que sale con la ruta que aparece en las capturas de pantalla que te he enviado)
     switch (cordova.platformId) {
         case 'android':
