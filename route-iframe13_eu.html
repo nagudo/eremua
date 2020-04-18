@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" href="css/fonts/fontawesome-free-5.7.2-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/fonts/fontawesome-free-5.7.2-web/css/solid.min.css">
+    <title>Eremua - Sugea - Mapa</title>
+</head>
+
+<body onload="onBodyLoad()">
+    <div class="app about">
+        <div class="c-nav">
+            <img class="c-nav__img" src="img/nav.svg" alt="nav.svg" title ="Eremua - menu" />
+            <div class="c-nav__wrapper">
+                <div id="navButton" class="c-nav__button">
+                    <div class="c-nav__button--bar"></div>
+                </div>
+                <span class="c-nav__lang--active u-text--primary u-text--small">EUSKERA</span>
+                <a href="route-iframe13.html" title="Cambiar idioma" class="c-nav__lang u-text--primary u-text--small">ES</a>
+            </div>
+            <div class="o-nav__menu">
+                <ul class="o-nav__items o-nav__items--primary">
+                    <li><a href="./index.html" title="INICIO">HASIERA</a></li>
+                    <li><a href="./about_eu.html" title="EREMUA">EREMUA</a></li>
+                    <li><a href="./routes_eu.html" title="VER RUTAS">IBILBIDEAK</a></li>
+                    <li><a href="./information_eu.html" title="INFORMACION">INFORMAZIOA</a></li>
+                    <li><a href="https://www.eremua.com/zerbitzuakEUS.html" title="SERVICIOS">ZERBITZUAK</a></li>
+                    <li><a href="https://eremua.com/noticias/" title="AVISOS">OHARPENAK</a></li>
+                    <li><a href="./contact_eu.html" title="CONTACTO">HARREMANA</a></li>
+                </ul>
+                <ul class="o-nav__items">
+                    <li><a href="./recommend.html" title="RECOMENDACIONES">GOMENDIOAK</a></li>
+                    <li><a href="./legal.html" title="AVISO LEGAL">LEGE OHARRA</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="l-page u-text--center about__wrapper">
+            <a class="c-button c-button--simple" href="route-detail13_eu.html"> <span class="fas fa-arrow-left"></span>Ibilbideara itzuli</a>
+            <div class="u-clear--s"></div>
+            <div class="l-page__item--out">
+                <img src="img/datosrutas/13datos.jpg" alt="Detalles sugea" title="Detalles Sugea" />
+            </div>
+            <div class="u-clear--s"></div>
+            <h3 class="u-text--very-hard">DIFICULTAD ALTA</h3>
+            <div class="u-clear--s"></div>
+            <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1VW6kg9E9xuYJLYSqNOF66gug-RvObUgX" width="100%" height="480"></iframe>
+            <div class="text-center">
+                Ikonoa zakatu [  ] ibilbidea hasteko
+            </div>
+            <div class="u-clear--m"></div>
+            <a class="" href="https://es.wikiloc.com/rutas-outdoor/13-nafarroa-xtrem-43876807">Wikiloc-en-ibilbidea<span class="u-text--small fas fa-external-link-alt"></span></a>
+            <div class="u-clear--m"></div>
+            <button class="c-button c-button--primary" onclick="fileDownload('tracks/13.Nafarroa.Extrem.OFICIAL.gpx')">DESKARGATU GPX</button>
+            <div class="u-clear--s"></div>
+            <button class="c-button c-button--primary" onclick="fileDownload('documentos/fichas/13.Nafarroa.Extrem.pdf')">DESKARGATU PDF</button>
+            <div class="u-clear--s"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/download.js"></script>
+</body>
+
+</html>
